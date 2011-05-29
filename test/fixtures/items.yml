@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  description: MyText
+  sku: MyString
+  count_on_hand: 1
+  cost_in_cents: 1
+  type: MyString
+  width: 1
+  height: 1
+  master: false
+
+two:
+  name: MyString
+  description: MyText
+  sku: MyString
+  count_on_hand: 1
+  cost_in_cents: 1
+  type: MyString
+  width: 1
+  height: 1
+  master: false

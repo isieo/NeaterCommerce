@@ -1,0 +1,43 @@
+<h1>Listing payment_profiles</h1>
+
+<table>
+  <tr>
+    <th>Customer</th>
+    <th>Address</th>
+    <th>Payment cim</th>
+    <th>Active</th>
+    <th>Last digits</th>
+    <th>Month</th>
+    <th>Year</th>
+    <th>Cc type</th>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Card name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @payment_profiles.each do |payment_profile| %>
+  <tr>
+    <td><%= payment_profile.customer_id %></td>
+    <td><%= payment_profile.address_id %></td>
+    <td><%= payment_profile.payment_cim_id %></td>
+    <td><%= payment_profile.active %></td>
+    <td><%= payment_profile.last_digits %></td>
+    <td><%= payment_profile.month %></td>
+    <td><%= payment_profile.year %></td>
+    <td><%= payment_profile.cc_type %></td>
+    <td><%= payment_profile.first_name %></td>
+    <td><%= payment_profile.last_name %></td>
+    <td><%= payment_profile.card_name %></td>
+    <td><%= link_to 'Show', payment_profile %></td>
+    <td><%= link_to 'Edit', edit_payment_profile_path(payment_profile) %></td>
+    <td><%= link_to 'Destroy', payment_profile, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Payment profile', new_payment_profile_path %>

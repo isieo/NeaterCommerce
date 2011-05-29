@@ -1,0 +1,27 @@
+<h1>Listing item_apis</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Api class name</th>
+    <th>Options</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @item_apis.each do |item_api| %>
+  <tr>
+    <td><%= item_api.name %></td>
+    <td><%= item_api.api_class_name %></td>
+    <td><%= item_api.options %></td>
+    <td><%= link_to 'Show', item_api %></td>
+    <td><%= link_to 'Edit', edit_item_api_path(item_api) %></td>
+    <td><%= link_to 'Destroy', item_api, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Item api', new_item_api_path %>

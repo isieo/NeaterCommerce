@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @item.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @item.description %>
+</p>
+
+<p>
+  <b>Sku:</b>
+  <%= @item.sku %>
+</p>
+
+<p>
+  <b>Count on hand:</b>
+  <%= @item.count_on_hand %>
+</p>
+
+<p>
+  <b>Cost in cents:</b>
+  <%= @item.cost_in_cents %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @item.type %>
+</p>
+
+<p>
+  <b>Width:</b>
+  <%= @item.width %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @item.height %>
+</p>
+
+<p>
+  <b>Master:</b>
+  <%= @item.master %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>

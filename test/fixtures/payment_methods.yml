@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  gateway_id: 1
+  gateway_options: MyText
+
+two:
+  name: MyString
+  gateway_id: 1
+  gateway_options: MyText

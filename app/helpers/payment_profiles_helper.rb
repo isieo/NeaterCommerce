@@ -1,0 +1,2 @@
+module PaymentProfilesHelper
+end

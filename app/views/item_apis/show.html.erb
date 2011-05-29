@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @item_api.name %>
+</p>
+
+<p>
+  <b>Api class name:</b>
+  <%= @item_api.api_class_name %>
+</p>
+
+<p>
+  <b>Options:</b>
+  <%= @item_api.options %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_api_path(@item_api) %> |
+<%= link_to 'Back', item_apis_path %>

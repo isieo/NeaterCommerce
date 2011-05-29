@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Customer:</b>
+  <%= @payment_profile.customer_id %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @payment_profile.address_id %>
+</p>
+
+<p>
+  <b>Payment cim:</b>
+  <%= @payment_profile.payment_cim_id %>
+</p>
+
+<p>
+  <b>Active:</b>
+  <%= @payment_profile.active %>
+</p>
+
+<p>
+  <b>Last digits:</b>
+  <%= @payment_profile.last_digits %>
+</p>
+
+<p>
+  <b>Month:</b>
+  <%= @payment_profile.month %>
+</p>
+
+<p>
+  <b>Year:</b>
+  <%= @payment_profile.year %>
+</p>
+
+<p>
+  <b>Cc type:</b>
+  <%= @payment_profile.cc_type %>
+</p>
+
+<p>
+  <b>First name:</b>
+  <%= @payment_profile.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @payment_profile.last_name %>
+</p>
+
+<p>
+  <b>Card name:</b>
+  <%= @payment_profile.card_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_payment_profile_path(@payment_profile) %> |
+<%= link_to 'Back', payment_profiles_path %>

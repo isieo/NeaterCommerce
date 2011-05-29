@@ -1,0 +1,61 @@
+<%= form_for(@payment_profile) do |f| %>
+  <% if @payment_profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@payment_profile.errors.count, "error") %> prohibited this payment_profile from being saved:</h2>
+
+      <ul>
+      <% @payment_profile.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :customer_id %><br />
+    <%= f.text_field :customer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :address_id %><br />
+    <%= f.text_field :address_id %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_cim_id %><br />
+    <%= f.text_field :payment_cim_id %>
+  </div>
+  <div class="field">
+    <%= f.label :active %><br />
+    <%= f.check_box :active %>
+  </div>
+  <div class="field">
+    <%= f.label :last_digits %><br />
+    <%= f.text_field :last_digits %>
+  </div>
+  <div class="field">
+    <%= f.label :month %><br />
+    <%= f.text_field :month %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.text_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :cc_type %><br />
+    <%= f.text_field :cc_type %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :card_name %><br />
+    <%= f.text_field :card_name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

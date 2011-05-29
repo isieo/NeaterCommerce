@@ -1,0 +1,27 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  customer_id: 1
+  address_id: 1
+  payment_cim_id: MyString
+  active: false
+  last_digits: MyString
+  month: MyString
+  year: MyString
+  cc_type: MyString
+  first_name: MyString
+  last_name: MyString
+  card_name: MyString
+
+two:
+  customer_id: 1
+  address_id: 1
+  payment_cim_id: MyString
+  active: false
+  last_digits: MyString
+  month: MyString
+  year: MyString
+  cc_type: MyString
+  first_name: MyString
+  last_name: MyString
+  card_name: MyString

@@ -1,0 +1,29 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  firstname: Calvin
+  lastname: Tee
+  address1: 23 jalan monkey
+  address2: monkey magic
+  city: skyland
+  state_id: 1
+  zipcode: 123
+  country_id: 1
+  phone: MyString
+  state_name: MyString
+  archived: false
+  archived_at: 2011-05-28 03:33:50
+
+two:
+  firstname: MyString
+  lastname: MyString
+  address1: MyString
+  address2: MyString
+  city: MyString
+  state_id: 1
+  zipcode: MyString
+  country_id: 1
+  phone: MyString
+  state_name: MyString
+  archived: false
+  archived_at: 2011-05-28 03:33:50

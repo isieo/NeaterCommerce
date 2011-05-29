@@ -1,0 +1,29 @@
+<%= form_for(@item_api) do |f| %>
+  <% if @item_api.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item_api.errors.count, "error") %> prohibited this item_api from being saved:</h2>
+
+      <ul>
+      <% @item_api.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :api_class_name %><br />
+    <%= f.text_field :api_class_name %>
+  </div>
+  <div class="field">
+    <%= f.label :options %><br />
+    <%= f.text_area :options %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

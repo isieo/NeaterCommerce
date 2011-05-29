@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Order:</b>
+  <%= @payment.order_id %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @payment.amount %>
+</p>
+
+<p>
+  <b>Payment method:</b>
+  <%= @payment.payment_method_id %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @payment.state %>
+</p>
+
+<p>
+  <b>Response code:</b>
+  <%= @payment.response_code %>
+</p>
+
+<p>
+  <b>Avs response:</b>
+  <%= @payment.avs_response %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%= @payment.data %>
+</p>
+
+
+<%= link_to 'Edit', edit_payment_path(@payment) %> |
+<%= link_to 'Back', payments_path %>
