@@ -15,3 +15,4 @@ module ::RakeFileUtils
 end
 
 NeaterCommerce::Application.load_tasks
+

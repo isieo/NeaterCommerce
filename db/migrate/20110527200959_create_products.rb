@@ -2,6 +2,7 @@ class CreateProducts < ActiveRecord::Migration
   def self.up
     create_table :products do |t|
       t.string :name
+      t.integer :parent_id
       t.text :description
       t.references :product_group
       t.integer :item_id

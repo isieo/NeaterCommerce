@@ -30,7 +30,21 @@ gem 'sqlite3'
 #   gem 'webrat'
 # end
 
+group :test do
+  gem "webrat"
+  gem "rspec"
+  gem "cucumber-rails"
+  gem "database_cleaner"
+  gem "capybara"
+end
+
+group :test, :development do
+  gem "rspec-rails"
+end
+
 gem "devise", "~> 1.3.4"
 gem "state_machine", "~> 1.0.0"
 gem "will_paginate", "~> 2.3.15"
 gem "googlecharts", "~> 1.6.7"
+
+
