@@ -32,6 +32,12 @@
     <%= f.text_field :cents %>
   </div>
   <div class="field">
+  <%#=f.fields_for :items do |i| %>
+    <%= f.label :item_ids, 'Items' %><br />
+    <%= f.collection_select(:item_ids,Item.all,:id,:name,{},:multiple=>"multiple") %>
+  </div>
+  <%#end%>
+  <div class="field">
     <%= f.label :archived %><br />
     <%= f.check_box :archived %>
   </div>
@@ -39,3 +45,4 @@
     <%= f.submit %>
   </div>
 <% end %>
+

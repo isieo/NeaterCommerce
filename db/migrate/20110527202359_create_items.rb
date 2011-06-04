@@ -9,9 +9,8 @@ class CreateItems < ActiveRecord::Migration
       t.string :type
       t.integer :width
       t.integer :height
-      t.boolean :master
       t.references :item_api
-      
+
       t.timestamps
     end
   end
@@ -20,3 +19,4 @@ class CreateItems < ActiveRecord::Migration
     drop_table :items
   end
 end
+
