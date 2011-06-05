@@ -43,6 +43,7 @@ group :test do
   gem "database_cleaner"
   gem "capybara"
   gem "factory_girl"
+  gem "rack-test"
 end
 
 group :test, :development do

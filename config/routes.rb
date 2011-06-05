@@ -27,6 +27,10 @@ NeaterCommerce::Application.routes.draw do
 
   resources :addresses
 
+  namespace :api do
+    resources :order
+  end
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -84,3 +88,4 @@ NeaterCommerce::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 end
+
