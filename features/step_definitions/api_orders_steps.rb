@@ -38,18 +38,23 @@ Then /^I send payment details to complete the order$/ do
   data = ActiveSupport::JSON.decode(last_response.body)
   order_data = data["order"]
   put "/api/order/#{order_data["id"]}.json",{
-    :customer => { :first_name => 'Calvin', :last_name => 'Tee', :email => 'calvin@example.com'},
-    :billing_address => { :first_name => 'Calvin',
-                          :last_name => 'Tee',
-                          :email => 'calvin@example.com',
-                          :address1 => '2323,
-                          :test land',
-                          :address2 => 'me test',
-                          :city => 'Awesome city',
-                          :state_name => 'Plain Awesomeness',
-                          :state_id => nil,
-                          :country => { :id => 1 } },
-    :products => [{ :id => 1, :quantity => 1 }]
+            :billing_address => { :first_name => 'Calvin',
+                                  :last_name => 'Tee',
+                                  :email => 'calvin@example.com',
+                                  :address1 => '2323,
+                                  :test land',
+                                  :address2 => 'me test',
+                                  :city => 'Awesome city',
+                                  :state_name => 'Plain Awesomeness',
+                                  :state_id => nil,
+                                  :country => { :id => 1 } },
+            :payment => { :payment_method=>'creditcard',
+                          :payment_data =>{
+                              :credit_card_number => '4111111111111111',
+                              :expiry_date => '04/15',
+                              :cvv => '132',
+                          }
+            },
     }.to_json
 end
 

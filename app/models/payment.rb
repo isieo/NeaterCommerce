@@ -1,3 +1,4 @@
 class Payment < ActiveRecord::Base
-  has_many :orders
+  belongs_to :order
+  has_one :payment_method
 end

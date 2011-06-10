@@ -24,9 +24,10 @@ class Api::OrderController < ApplicationController
 
   def update
     order = Order.find(params[:id])
+    order.update_attributes(params[:order])
+    order.pay(params[:payment])
 
-
-    render :json => order.to_json(:include => :customer, :include => { :order_lines =>{:include => :product} })
+    render :json => order.to_json(:include => :payments, :include => :customer, :include => { :order_lines =>{:include => :product} })
 
   end
 

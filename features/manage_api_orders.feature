@@ -40,6 +40,6 @@ Feature: Create orders via api
   Scenario: Complete an order with invalid payment
     Given I sent a valid json order data with one product
     Then I should receive the created order in json
-    And I send payment details to complete the order
+    And I send invalid payment details to complete the order
     Then I should not receive the updated order in json
 
